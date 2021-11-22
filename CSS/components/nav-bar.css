@@ -1,0 +1,72 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(121, 121, 121, 0.5);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* 
+    box-sizing
+    - box는 padding 주면 padding을 준 만큼 box 길이가 늘어남
+    - box-sizing: border-box 사용하면 padding을 주더라도 box 길이가 같음
+    - border-box
+      - padding을 주더라도 크기를 고정 시킴
+      
+   */
+  box-sizing: border-box;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 3s ease-in-out infinite;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  transform: translateY(50px);
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.nav__btn:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.nav__btn:last-child {
+  animation-delay: 0.8s;
+}
