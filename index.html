@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to KaTalk</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <!-- 
     BEM CSS 검색
@@ -17,23 +17,6 @@
     - fontawesome.com 
 -->
 <body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span>No Service</span>
-            <!--To Do:Icon-->
-            <i class="fas fa-wifi"></i>
-        </div>
-        <div class="status-bar__column"></div>
-            <span>18:43</span>
-        <div class="status-bar__column">
-            <span>110%</span>
-            <!-- Battery Icon-->
-            <i class="fas fa-battery-full fa-lg"></i>
-            <!-- Lightning Icon -->
-            <i class="fas fa-bolt"></i>
-        </div>
-    </div>
-
     <div id="no-mobile">
         <span>Your screen is too big</span>
     </div>
@@ -54,12 +37,18 @@
           - 
     -->>
         
-    <form action="friends.html" method="get" id="login-form">
+    <form action="friend.html" method="get" id="login-form">
         <input name="username" type="text" placeholder="Email or phone number"/>
         <input name="password" type="password" placeholder="passwoerd" />
         <input type="submit" value="Log In" />
         <a href="#">Find Kokoa Account or Password</a>
     </form>
+
+    <div id="no-mobile">
+        <img src="img/img_013.png" />
+        <span>Your screen is too big</span>
+    </div>
+    
     <script src="https://kit.fontawesome.com/6478f529f2.js" 
             crossorigin="anonymous"></script>
 </body>
