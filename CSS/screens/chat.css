@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: #dfffb8;
+  background-color: var(--green);
   height: 500vh;
 }
 
